@@ -1,0 +1,12 @@
+<rules>
+
+  <rule weight="2.0">
+    <match tags="vblex.*.*.*.conneg.*"/>
+    <match lemma="mikään" tags="prn.*"><select lemma="nimidä" tags="prn.*"/></match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="haluta" tags="vblex.*.imp.*"><select lemma="tahtuo" tags="vblex.*"/></match>
+  </rule>
+
+</rules>

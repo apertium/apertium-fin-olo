@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+  <!-- fin→olo direction: -->
+
+  <mode name="fin-olo" install="yes">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="fin-olo.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-olo.fin-olo.t1x"/>
+        <file name="fin-olo.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-fin-olo.fin-olo.t2x"/>
+        <file name="fin-olo.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-fin-olo.fin-olo.t3x"/>
+        <file name="fin-olo.t3x.bin"/>
+      </program>
+      <program name="hfst-proc $1">
+        <file name="fin-olo.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="fin-olo-debug" install="yes">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="fin-olo.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-olo.fin-olo.t1x"/>
+        <file name="fin-olo.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-fin-olo.fin-olo.t2x"/>
+        <file name="fin-olo.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-fin-olo.fin-olo.t3x"/>
+        <file name="fin-olo.t3x.bin"/>
+      </program>
+      <program name="hfst-proc -d">
+        <file name="fin-olo.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
+  <mode name="fin-olo-morph" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="fin-olo-disam" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
+  <mode name="fin-olo-syntax" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
+  <mode name="fin-olo-tagger" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
+  <mode name="fin-olo-biltrans" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <mode name="fin-olo-lextor" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m -t">
+        <file name="fin-olo.autolex.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <mode name="fin-olo-chunker" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="fin-olo.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -t -b">
+        <file name="apertium-fin-olo.fin-olo.t1x"/>
+        <file name="fin-olo.t1x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="fin-olo-interchunk" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer">
+        <file name="apertium-fin-olo.fin-olo.t1x"/>
+        <file name="fin-olo.t1x.bin"/>
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="apertium-interchunk -t">
+        <file name="apertium-fin-olo.fin-olo.t2x"/>
+        <file name="fin-olo.t2x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="fin-olo-postchunk" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="fin-olo.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-olo.fin-olo.t1x"/>
+        <file name="fin-olo.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-fin-olo.fin-olo.t2x"/>
+        <file name="fin-olo.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-fin-olo.fin-olo.t3x"/>
+        <file name="fin-olo.t3x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="fin-olo-dgen">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="fin-olo.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-olo.fin-olo.t1x"/>
+        <file name="fin-olo.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-fin-olo.fin-olo.t2x"/>
+        <file name="fin-olo.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-fin-olo.fin-olo.t3x"/>
+        <file name="fin-olo.t3x.bin"/>
+      </program>
+      <program name="hfst-proc -d">
+        <file name="fin-olo.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <!-- untrimmed fin-olo, for debug: -->
+  <mode name="ufin-olo" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf-untrimmed.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="fin-olo.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-olo.fin-olo.t1x"/>
+        <file name="fin-olo.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-fin-olo.fin-olo.t2x"/>
+        <file name="fin-olo.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-fin-olo.fin-olo.t3x"/>
+        <file name="fin-olo.t3x.bin"/>
+      </program>
+      <program name="hfst-proc $1">
+        <file name="fin-olo.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <mode name="ufin-olo-morph" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf-untrimmed.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ufin-olo-disam" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf-untrimmed.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ufin-olo-syntax" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf-untrimmed.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ufin-olo-tagger" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf-untrimmed.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ufin-olo-biltrans" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf-untrimmed.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ufin-olo-lextor" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf-untrimmed.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m -t">
+        <file name="fin-olo.autolex.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ufin-olo-chunker" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf-untrimmed.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="fin-olo.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -t -b">
+        <file name="apertium-fin-olo.fin-olo.t1x"/>
+        <file name="fin-olo.t1x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ufin-olo-interchunk" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf-untrimmed.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer">
+        <file name="apertium-fin-olo.fin-olo.t1x"/>
+        <file name="fin-olo.t1x.bin"/>
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="apertium-interchunk -t">
+        <file name="apertium-fin-olo.fin-olo.t2x"/>
+        <file name="fin-olo.t2x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ufin-olo-postchunk" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf-untrimmed.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="fin-olo.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-olo.fin-olo.t1x"/>
+        <file name="fin-olo.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-fin-olo.fin-olo.t2x"/>
+        <file name="fin-olo.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-fin-olo.fin-olo.t3x"/>
+        <file name="fin-olo.t3x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ufin-olo-dgen">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="fin-olo.automorf-untrimmed.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin-olo.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="fin-olo.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fin-olo.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="fin-olo.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-olo.fin-olo.t1x"/>
+        <file name="fin-olo.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-fin-olo.fin-olo.t2x"/>
+        <file name="fin-olo.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-fin-olo.fin-olo.t3x"/>
+        <file name="fin-olo.t3x.bin"/>
+      </program>
+      <program name="hfst-proc -d">
+        <file name="fin-olo.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <!-- olo→fin direction: -->
+
+  <mode name="olo-fin-morph" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="olo-fin.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="uolo-fin-morph" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="olo-fin.automorf-untrimmed.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="olo-fin" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="olo-fin.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="olo-fin.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="olo-fin.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="olo-fin.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="olo-fin.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-olo.olo-fin.t1x"/>
+        <file name="olo-fin.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-fin-olo.olo-fin.t2x"/>
+        <file name="olo-fin.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-fin-olo.olo-fin.t3x"/>
+        <file name="olo-fin.t3x.bin"/>
+      </program>
+      <program name="hfst-proc $1">
+        <file name="olo-fin.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="olo-fin-debug" install="yes">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="olo-fin.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="olo-fin.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="olo-fin.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="olo-fin.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="olo-fin.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-fin-olo.olo-fin.t1x"/>
+        <file name="olo-fin.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-fin-olo.olo-fin.t2x"/>
+        <file name="olo-fin.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-fin-olo.olo-fin.t3x"/>
+        <file name="olo-fin.t3x.bin"/>
+      </program>
+      <program name="hfst-proc -d">
+        <file name="olo-fin.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+  
+  <mode name="olo-fin-disam" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="olo-fin.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="olo-fin.mor.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+</modes>
