@@ -174,6 +174,9 @@
     <e><p><l>äiti<s n="n"/></l><r>muamu<s n="n"/></r></p></e>
     <e><p><l>ääni<s n="n"/></l><r>iäni<s n="n"/></r></p></e>
 
+    <e><p><l>kettu<s n="n"/></l><r>reboi<s n="n"/></r></p></e>
+    <e><p><l>maa<s n="n"/></l><r>mua<s n="n"/></r></p></e>
+    <e><p><l>pesä<s n="n"/></l><r>pezä<s n="n"/></r></p></e>
 
     <!-- verbs -->
 
@@ -236,8 +239,9 @@
     <e><p><l>täytyä<s n="vblex"/></l><r>pidiä<s n="vblex"/></r></p></e>
     <e><p><l>vastata<s n="vblex"/></l><r>vastata<s n="vblex"/></r></p></e>
     <e><p><l>voida<s n="vblex"/></l><r>voija<s n="vblex"/></r></p></e>
-    <e><p><l>voisa<s n="vblex"/></l><r>voija<s n="vblex"/></r></p></e>
     <e><p><l>yrittää<s n="vblex"/></l><r>oppie<s n="vblex"/></r></p></e>
+    
+    <e><p><l>kaivaa<s n="vblex"/></l><r>kaivue<s n="vblex"/></r></p></e>
 
     <!-- negation verbs -->
     
@@ -265,12 +269,15 @@
     <e><p><l>varma<s n="adj"/></l><r>varmu<s n="adj"/></r></p></e>
     <e><p><l>vilu<s n="adj"/></l><r>vilu<s n="adj"/></r></p></e>
 
+    <e><p><l>kaunis<s n="adj"/></l><r>čoma<s n="adj"/></r></p></e>
+
     <!-- }}} -->
 
     <!-- adverbs -->
     
     <e><p><l>aina<s n="adv"/></l><r>ainos<s n="adv"/></r></p></e>
     <e><p><l>alle<s n="adv"/></l><r>alle<s n="adv"/></r></p></e>
+    <e><p><l>alta<s n="adv"/></l><r>al<s n="ij"/></r></p></e>
     <e><p><l>edessä<s n="adv"/></l><r>ies<s n="adv"/></r></p></e>
     <e><p><l>edessä<s n="adv"/></l><r>ies<s n="post"/></r></p></e>
     <e><p><l>edessä<s n="po"/></l><r>ies<s n="adv"/></r></p></e>
@@ -336,6 +343,7 @@
     <e><p><l>kuusi<s n="num"/></l><r>kuuzi<s n="num"/><s n="card"/></r></p></e>
     <e><p><l>viisi<s n="num"/></l><r>viizi<s n="num"/><s n="card"/></r></p></e>
     <e><p><l>yksi<s n="num"/></l><r>yksi<s n="num"/><s n="card"/></r></p></e>
+    <e><p><l>neljä<s n="num"/></l><r>nelli<s n="num"/><s n="card"/></r></p></e>
 
     <!-- }}} -->
 
@@ -373,6 +381,7 @@
     <e><p><l>se<s n="prn"/></l><r>sežo<s n="prn"/></r></p></e>
     <e><p><l>sinä<s n="prn"/><s n="pers"/></l><r>sinä<s n="prn"/><s n="pers"/><s n="p2"/></r></p></e>
 
+    <e><p><l>itse<s n="prn"/></l><r>iče<s n="prn"/></r></p></e>
     <!-- }}} -->
 
     <!-- {{{ interjections -->
