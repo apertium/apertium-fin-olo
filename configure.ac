@@ -4,8 +4,8 @@
 
 AC_PREREQ(2.52)
 
-AC_INIT([apertium-fin-olo], [0.1.0], [flammie@users.sourceforge.net])
-AM_INIT_AUTOMAKE([apertium-fin-olo], [0.1.0], no-define)
+AC_INIT([apertium-fin-olo], [0.0.0], [flammie@iki.fi], [apertium-fin-deu], [http://wiki.apertium.org/wiki/apertium-fin-olo])
+AM_INIT_AUTOMAKE([-Wall -Werror -Wno-portability foreign])
 AC_PROG_LN_S
 AC_PROG_AWK
 
