@@ -20,6 +20,7 @@
     </def-cat>
      <def-cat n="verb">
       <cat-item tags="vblex.*"/>
+      <cat-item tags="vaux.*"/>
     </def-cat>
     <def-cat n="sent">
       <cat-item tags="sent"/>
@@ -43,6 +44,10 @@
   <section-def-attrs>
     <def-attr n="a_act">
       <attr-item tags="act"/>
+    </def-attr>
+    <def-attr n="a_verb">
+      <attr-item tags="vblex"/>
+      <attr-item tags="vaux"/>
     </def-attr>
     <def-attr n="a_actv">
       <attr-item tags="actv"/>
@@ -78,7 +83,12 @@
       <attr-item tags="infe"/>
       <attr-item tags="infma"/>
       <attr-item tags="inf"/>
-  </def-attr>
+    </def-attr>
+    <def-attr n="a_pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
     <def-attr n="a_nbr">
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
@@ -123,6 +133,12 @@
     <def-attr n="a_trans">
       <attr-item tags="iv"/>
       <attr-item tags="tv"/>
+    </def-attr>
+    <def-attr n="a_tense">
+      <attr-item tags="pri"/>
+      <attr-item tags="past"/>
+      <attr-item tags="ind.prs"/>
+      <attr-item tags="ind.prt"/>
     </def-attr>
     <def-attr n="a_deriv">
        <attr-item tags="der_dimin.n"/>
@@ -409,6 +425,27 @@
             <clip pos="1" side="tl" part="a_sem"/>
             <lit v=""/>
           </let>
+        </def-macro>
+    <def-macro n="tensemood-mangler" npar="1">
+      <choose>
+        <when>
+          <test>
+              <equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="past"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_tense"/><lit-tag v="ind.prt"/>
+          </let>
+        </when>
+        <when>
+          <test>
+              <equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pri"/></equal>
+          </test>
+          <let>
+            <clip pos="1" side="tl" part="a_tense"/><lit-tag v="ind.prs"/>
+          </let>
+        </when>
+        <!-- otherwise, same tense -->
+      </choose>
     </def-macro>
 
   </section-def-macros>
@@ -624,6 +661,7 @@
       </pattern>
       <action>
         <call-macro n="remove-semtag1"><with-param pos="1"/></call-macro>
+        <call-macro n="tensemood-mangler"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="a_act"/><lit v=""/></let>
@@ -633,7 +671,12 @@
               <tag><lit-tag v="SV"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_actv"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
             </lu>
           </chunk>
         </out>

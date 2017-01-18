@@ -5,6 +5,7 @@
     <sdef n="adj"        c="Adjective"/>
     <sdef n="attr"        c="Attributive"/>
     <sdef n="vblex"/>
+    <sdef n="vaux"/>
     <sdef n="foc"/>
     <sdef n="clb"/>
     <sdef n="ij"/>
@@ -34,18 +35,18 @@
     <sdef n="ref"     c="Reflexive"/>
     <sdef n="ind"     c="Indefinite"/>
 
-    <sdef n="p1" 	c=""/> 
-    <sdef n="p2" 	c=""/> 
-    <sdef n="p3" 	c=""/> 
-    <sdef n="guio" 	c=""/> 
-    <sdef n="cm" 	c=""/> 
-    <sdef n="sent" 	c=""/> 
-    <sdef n="lpar" 	c=""/> 
-    <sdef n="rpar" 	c=""/> 
-    <sdef n="lquot" 	c=""/> 
-    <sdef n="quot" 	c=""/> 
-    <sdef n="rquot" 	c=""/> 
-    <sdef n="apos" 	c=""/> 
+    <sdef n="p1" 	c=""/>
+    <sdef n="p2" 	c=""/>
+    <sdef n="p3" 	c=""/>
+    <sdef n="guio" 	c=""/>
+    <sdef n="cm" 	c=""/>
+    <sdef n="sent" 	c=""/>
+    <sdef n="lpar" 	c=""/>
+    <sdef n="rpar" 	c=""/>
+    <sdef n="lquot" 	c=""/>
+    <sdef n="quot" 	c=""/>
+    <sdef n="rquot" 	c=""/>
+    <sdef n="apos" 	c=""/>
 
 
     <sdef n="qst"       c=""/>
@@ -93,22 +94,26 @@
     <sdef n="der_minen"/>
     <sdef n="der_avt"/>
     <sdef n="der_at"/>
-    
+
     <sdef n="spat"/>
     <sdef n="temp"/>
-    
+
     <sdef n="qnt"/>
     <sdef n="indef"/>
     <sdef n="rel"/>
-    
+
     <sdef n="card"/>
     <sdef n="ord"/>
 
     <sdef n="ant"/>
+    <sdef n="m"/>
+    <sdef n="f"/>
+    <sdef n="top"/>
     <sdef n="sem_mal"/>
     <sdef n="sem_fem"/>
     <sdef n="sem_ant_mal"/>
     <sdef n="sem_ant_fem"/>
+    <sdef n="sem_top"/>
   </sdefs>
 
   <section id="main" type="standard">
@@ -180,6 +185,10 @@
 
     <!-- verbs -->
 
+    <e><p><l>olla<s n="vaux"/></l><r>olla<s n="vblex"/></r></p></e>
+    <e><p><l>voida<s n="vaux"/></l><r>voija<s n="vblex"/></r></p></e>
+    <e><p><l>pitää<s n="vaux"/></l><r>pidiä<s n="vblex"/></r></p></e>
+
     <e><p><l>ajatella<s n="vblex"/></l><r>duumaija<s n="vblex"/></r></p></e>
     <e><p><l>etsiä<s n="vblex"/></l><r>eččie<s n="vblex"/></r></p></e>
     <e><p><l>halua<s n="vblex"/></l><r>tahtuo<s n="vblex"/></r></p></e>
@@ -240,11 +249,11 @@
     <e><p><l>vastata<s n="vblex"/></l><r>vastata<s n="vblex"/></r></p></e>
     <e><p><l>voida<s n="vblex"/></l><r>voija<s n="vblex"/></r></p></e>
     <e><p><l>yrittää<s n="vblex"/></l><r>oppie<s n="vblex"/></r></p></e>
-    
+
     <e><p><l>kaivaa<s n="vblex"/></l><r>kaivue<s n="vblex"/></r></p></e>
 
     <!-- negation verbs -->
-    
+
     <e><p><l>ei<s n="vblex"/><s n="actv"/><s n="neg"/></l><r>ei<s n="vblex"/><s n="neg"/></r></p></e>
     <e><p><l>ei<s n="vblex"/><s n="neg"/><s n="actv"/></l><r>ei<s n="vblex"/><s n="neg"/></r></p></e>
 
@@ -274,7 +283,7 @@
     <!-- }}} -->
 
     <!-- adverbs -->
-    
+
     <e><p><l>aina<s n="adv"/></l><r>ainos<s n="adv"/></r></p></e>
     <e><p><l>alle<s n="adv"/></l><r>alle<s n="adv"/></r></p></e>
     <e><p><l>alta<s n="adv"/></l><r>al<s n="ij"/></r></p></e>
@@ -326,7 +335,7 @@
     <!-- }}} -->
 
     <!-- {{{ Adpositions -->
-    
+
     <e><p><l>alle<s n="post"/></l><r>alle<s n="pr"/></r></p></e>
     <e><p><l>alle<s n="pr"/></l><r>alle<s n="pr"/></r></p></e>
     <e><p><l>edessä<s n="adv"/></l><r>ies<s n="post"/></r></p></e>
@@ -362,9 +371,9 @@
     <!-- }}} -->
 
     <!-- {{{ Pronouns -->
-    
-    <e><p><l>he<s n="prn"/><s n="pers"/></l><r>hyö<s n="prn"/><s n="pers"/><s n="p3"/></r></p></e>
-    <e><p><l>hän<s n="prn"/><s n="pers"/></l><r>häi<s n="prn"/><s n="pers"/><s n="p3"/></r></p></e>
+
+    <e><p><l>he<s n="prn"/></l><r>hyö<s n="prn"/><s n="pers"/><s n="p3"/></r></p></e>
+    <e><p><l>hän<s n="prn"/></l><r>häi<s n="prn"/><s n="pers"/><s n="p3"/></r></p></e>
     <e><p><l>jokin<s n="prn"/><s n="qnt"/><s n="indef"/></l><r>gu<s n="prn"/></r></p></e>
     <e><p><l>jotain<s n="prn"/></l><r>mitahto<s n="prn"/></r></p></e>
     <e><p><l>mikä<s n="prn"/><s n="rel"/></l><r>mi<s n="prn"/><s n="itg"/></r></p></e>
@@ -388,38 +397,39 @@
 
     <e><p><l>ei<s n="ij"/></l><r>ei<s n="ij"/></r></p></e>
     <e><p><l>vaikka<s n="ij"/></l><r>vaigu<s n="ij"/></r></p></e>
-    
+
     <!-- }}} -->
 
     <!-- Propers -->
 
-    <e><p><l>Jaakko<s n="np"/></l><r>Juakko<s n="np"/><s n="sem_ant_mal"/></r></p></e>
-    <e><p><l>Mari<s n="np"/></l><r>Mari<s n="np"/><s n="sem_ant_fem"/></r></p></e>
+    <e><p><l>Jaakko<s n="np"/><s n="ant"/><s n="m"/></l><r>Juakko<s n="np"/><s n="sem_ant_mal"/></r></p></e>
+    <e><p><l>Mari<s n="np"/><s n="ant"/><s n="f"/></l><r>Mari<s n="np"/><s n="sem_ant_fem"/></r></p></e>
+    <e><p><l>Mari<s n="np"/><s n="top"/></l><r>Mari<s n="np"/><s n="sem_top"/></r></p></e>
 
 
 
      <!-- {{{ Punctuation -->
-     <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
-     <e><p><l>(<s n="lpar"/></l><r>(<s n="lpar"/></r></p></e>
-     <e><p><l>)<s n="rpar"/></l><r>)<s n="rpar"/></r></p></e>
-     <e><p><l>[<s n="lpar"/></l><r>[<s n="lpar"/></r></p></e>
-     <e><p><l>]<s n="rpar"/></l><r>]<s n="rpar"/></r></p></e>
-     <e><p><l>«<s n="lquot"/></l><r>«<s n="lquot"/></r></p></e>
-     <e><p><l>»<s n="rquot"/></l><r>»<s n="rquot"/></r></p></e>
-     <e><p><l>“<s n="lquot"/></l><r>“<s n="lquot"/></r></p></e>
-     <e><p><l>”<s n="rquot"/></l><r>”<s n="rquot"/></r></p></e>
-     <e><p><l>-<s n="guio"/></l><r>-<s n="guio"/></r></p></e>
-     <e><p><l>—<s n="guio"/></l><r>—<s n="guio"/></r></p></e>
-     <e><p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
-     <e><p><l>"<s n="sent"/></l><r>"<s n="sent"/></r></p></e>
-     <e><re>[.\?;:!]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+     <e><p><l>,<s n="punct"/></l><r>,<s n="cm"/></r></p></e>
+     <e><p><l>(<s n="punct"/></l><r>(<s n="lpar"/></r></p></e>
+     <e><p><l>)<s n="punct"/></l><r>)<s n="rpar"/></r></p></e>
+     <e><p><l>[<s n="punct"/></l><r>[<s n="lpar"/></r></p></e>
+     <e><p><l>]<s n="punct"/></l><r>]<s n="rpar"/></r></p></e>
+     <e><p><l>«<s n="punct"/></l><r>«<s n="lquot"/></r></p></e>
+     <e><p><l>»<s n="punct"/></l><r>»<s n="rquot"/></r></p></e>
+     <e><p><l>“<s n="punct"/></l><r>“<s n="lquot"/></r></p></e>
+     <e><p><l>”<s n="punct"/></l><r>”<s n="rquot"/></r></p></e>
+     <e><p><l>-<s n="punct"/></l><r>-<s n="guio"/></r></p></e>
+     <e><p><l>—<s n="punct"/></l><r>—<s n="guio"/></r></p></e>
+     <e><p><l>'<s n="punct"/></l><r>'<s n="apos"/></r></p></e>
+     <e><p><l>"<s n="punct"/></l><r>"<s n="sent"/></r></p></e>
+     <e><re>[.\?;:!]+</re><p><l><s n="punct"/></l><r><s n="sent"/></r></p></e>
 <!--     <e><re>[0-9]+</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>--> <!-- no nums in olonetses-->
     <!-- }}} -->
-  
-  
 
-   
-  </section> 
+
+
+
+  </section>
 
 </dictionary>
 
