@@ -2,7 +2,7 @@
 ## Makefile for Northern Saami--Inari Saami
 ###############################################################################
 
-VERSION=0.1.0
+VERSION=0.0.0
 LANG1=fin
 LANG2=olo
 PREFIX1=$(LANG1)-$(LANG2)
@@ -12,9 +12,7 @@ BASENAME=apertium-$(PREFIX1)
 
 TARGETS_COMMON =			\
 	$(PREFIX1).automorf.hfst	\
-	$(PREFIX1).automorf-untrimmed.hfst \
-	$(PREFIX1).mor.rlx.bin		\
-	$(PREFIX1).syn.rlx.bin		\
+	$(PREFIX1).rlx.bin		\
 	$(PREFIX1).autobil.bin		\
 	$(PREFIX1).autolex.bin		\
 	$(PREFIX1).autogen.hfst		\
@@ -22,7 +20,6 @@ TARGETS_COMMON =			\
 	$(PREFIX1).t2x.bin		\
 	$(PREFIX1).t3x.bin		\
 	$(PREFIX2).automorf.hfst	\
-	$(PREFIX2).automorf-untrimmed.hfst \
 	$(PREFIX2).mor.rlx.bin		\
 	$(PREFIX2).syn.rlx.bin		\
 	$(PREFIX2).autobil.bin		\
@@ -53,34 +50,21 @@ TARGETS_COMMON =			\
 
 
 # -------------------
-# Northern Saami analysis:
+# Finnish analysis
 # -------------------
 
-.deps/$(LANG1).automorf.hfst: $(AP_SRC1)/$(BASENAME).$(PREFIX1).LR.att.gz .deps/.d
-	$(ZCAT) $< | hfst-txt2fst > $@
-
-.deps/$(PREFIX1).automorf-trimmed.hfst: .deps/$(LANG1).automorf.hfst .deps/$(PREFIX1).autobil.prefixes
-	hfst-compose-intersect -1 $< -2 .deps/$(PREFIX1).autobil.prefixes -o $@
-
-$(PREFIX1).automorf.hfst: .deps/$(PREFIX1).automorf-trimmed.hfst
-	hfst-fst2fst -w -i $< -o $@
-
-$(PREFIX1).automorf-untrimmed.hfst: .deps/$(LANG1).automorf.hfst
-	hfst-fst2fst -w -i $< -o $@
+$(PREFIX1).automorf.hfst: $(AP_SRC1)/$(LANG1).automorf.hfst
+	cp -v $< $@
 
 # -------------------
-# Northern Saami generation:
+# Finnish generation
 # ---------------------
 
-.deps/$(LANG1).autogen.hfst: $(AP_SRC1)/apertium-$(LANG1).$(LANG1).RL.att.gz .deps/.d
-	$(ZCAT) $< | hfst-txt2fst > $@
-
-$(PREFIX2).autogen.hfst: .deps/$(LANG1).autogen.hfst
-	hfst-fst2fst -O -i $< -o $@
-
+$(PREFIX2).autogen.hfst: $(AP_SRC1)/$(LANG1).autogen.hfst
+	cp -v $< $@
 
 # -------------------
-# Inari Saami analysis:
+# Livvi analysis:
 # -------------------
 
 .deps/$(LANG2).automorf.hfst: $(AP_SRC2)/$(BASENAME).$(PREFIX2).LR.att.gz .deps/.d
@@ -110,12 +94,8 @@ $(PREFIX1).autogen.hfst: .deps/$(LANG2).autogen.hfst
 ## Disambiguation rules
 ###############################################################################
 
-$(PREFIX1).mor.rlx.bin: $(AP_SRC1)/$(LANG1).mor.rlx.bin gt2apertium.cg3r
-	cg-relabel $^ $@
-
-$(PREFIX1).syn.rlx.bin: $(AP_SRC1)/$(LANG1).syn.rlx.bin gt2apertium.cg3r
-	cg-relabel $^ $@
-
+$(PREFIX1).rlx.bin: $(AP_SRC1)/apertium-$(LANG1).$(LANG1).rlx
+	cg-comp $< $@
 
 $(PREFIX2).mor.rlx.bin: $(AP_SRC2)/$(LANG2).mor.rlx.bin gt2apertium.cg3r
 	cg-relabel $^ $@
