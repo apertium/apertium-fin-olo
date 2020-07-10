@@ -2,7 +2,7 @@
 ## Makefile for Northern Saami--Inari Saami
 ###############################################################################
 
-VERSION=0.0.0
+VERSION=0.0.1
 LANG1=fin
 LANG2=olo
 PREFIX1=$(LANG1)-$(LANG2)
@@ -203,11 +203,11 @@ clean-local:
 ## Test
 ###############################################################################
 
-test: all
+check: all
 	echo "ja" | apertium -d . fin-olo | tee .test-mt
-	@echo "já" > .test-ref
+	@echo "ja" > .test-ref
 	@diff .test-ref .test-mt
-	echo "já" | apertium -d . olo-fin | tee .test-mt
+	echo "ja" | apertium -d . olo-fin | tee .test-mt
 	@echo "ja" > .test-ref
 	@diff .test-ref .test-mt
 	@rm .test-ref .test-mt
