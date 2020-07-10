@@ -1,0 +1,15 @@
+before_install:
+    - wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
+    - sudo apt-get install hfst apertium lttoolbox apertium-dev apertium-deu lttoolbox-dev libhfst-dev cg3 apertium-lex-tools apertium-fin giella-olo
+script:
+    - ./autogen.sh
+    - ./configure --prefix=/usr
+    - make
+    - make check
+    - make distcheck
+notifications:
+    irc:
+        channels:
+            - "chat.freenode.net#apertium"
+        on_failure: change
+        on_success: never
