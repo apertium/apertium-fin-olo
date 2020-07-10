@@ -204,11 +204,11 @@ clean-local:
 ###############################################################################
 
 check: all
-	echo "ja" | apertium -d . fin-olo | tee .test-mt
-	@echo "ja" > .test-ref
+	echo "talo" | apertium -d . fin-olo | tee .test-mt
+	@echo "taloi" > .test-ref
 	@diff .test-ref .test-mt
-	echo "ja" | apertium -d . olo-fin | tee .test-mt
-	@echo "ja" > .test-ref
+	echo "taloi" | apertium -d . olo-fin | tee .test-mt
+	@echo "talo" > .test-ref
 	@diff .test-ref .test-mt
 	@rm .test-ref .test-mt
 
