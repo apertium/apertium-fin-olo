@@ -8,10 +8,10 @@
         <file name="fin-olo.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -44,10 +44,10 @@
         <file name="fin-olo.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -90,7 +90,7 @@
         <file name="fin-olo.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -103,10 +103,10 @@
         <file name="fin-olo.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -119,10 +119,10 @@
         <file name="fin-olo.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -135,10 +135,10 @@
         <file name="fin-olo.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -154,10 +154,10 @@
         <file name="fin-olo.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -176,10 +176,10 @@
         <file name="fin-olo.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -201,10 +201,10 @@
         <file name="fin-olo.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="apertium-transfer">
@@ -225,10 +225,10 @@
         <file name="fin-olo.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -258,10 +258,10 @@
         <file name="fin-olo.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -296,10 +296,10 @@
         <file name="fin-olo.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -341,7 +341,7 @@
         <file name="fin-olo.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -352,10 +352,10 @@
         <file name="fin-olo.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -366,10 +366,10 @@
         <file name="fin-olo.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -380,10 +380,10 @@
         <file name="fin-olo.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -398,10 +398,10 @@
         <file name="fin-olo.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -419,10 +419,10 @@
         <file name="fin-olo.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -444,10 +444,10 @@
         <file name="fin-olo.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="apertium-transfer">
@@ -468,10 +468,10 @@
         <file name="fin-olo.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -501,10 +501,10 @@
         <file name="fin-olo.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
-        <file name="fin-olo.mor.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
-        <file name="fin-olo.syn.rlx.bin"/>
+        <file name="fin-olo.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -621,7 +621,7 @@
       </program>
     </pipeline>
   </mode>
-  
+
   <mode name="olo-fin-disam" install="no">
     <pipeline>
       <program name="hfst-proc --weight-classes 1 -w -e">
