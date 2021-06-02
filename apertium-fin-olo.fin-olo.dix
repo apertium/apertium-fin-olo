@@ -183,6 +183,11 @@
     <e><p><l>maa<s n="n"/></l><r>mua<s n="n"/></r></p></e>
     <e><p><l>pesä<s n="n"/></l><r>pezä<s n="n"/></r></p></e>
 
+    <e><p><l>astma<s n="n"/></l><r>astma<s n="n"/></r></p></e>
+    <e r="RL"><p><l>ukkomies<s n="n"/></l><r>naižekas<s n="n"/></r></p></e>
+    <e r="LR"><p><l>poikamies<s n="n"/></l><r>akatoi<s n="n"/></r></p></e>
+    <e><p><l>ukkomies<s n="n"/></l><r>akakas<s n="n"/></r></p></e>
+
     <!-- verbs -->
 
     <e><p><l>olla<s n="vaux"/></l><r>olla<s n="vblex"/></r></p></e>
@@ -252,6 +257,8 @@
 
     <e><p><l>kaivaa<s n="vblex"/></l><r>kaivue<s n="vblex"/></r></p></e>
 
+    <e><p><l>antaa<s n="vblex"/></l><r>andua<s n="vblex"/></r></p></e>
+
     <!-- negation verbs -->
 
     <e><p><l>ei<s n="vblex"/><s n="actv"/><s n="neg"/></l><r>ei<s n="vblex"/><s n="neg"/></r></p></e>
@@ -281,59 +288,101 @@
 
 
     <e><p><l>aataminaikainen<s n="adj"/></l><r>adamanaiguine<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>haikea<s n="adj"/></l><r>abei<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>apea<s n="adj"/></l><r>abei<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>alakuloinen<s n="adj"/></l><r>abei<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>aataminaikuinen<s n="adj"/></l><r>adamanaiguine<s n="adj"/></r></p></e>
     <e><p><l>abstrakti<s n="adj"/></l><r>abstraktine<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>aataminaikuinen<s n="adj"/></l><r>adamanaiguine<s n="adj"/></r></p></e>
     <e r="RL"><p><l>administratiivinen<s n="adj"/></l><r>administratiivine<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>afganistanilainen<s n="adj"/></l><r>afguanielaine<s n="adj"/></r></p></e>
+    <e><p><l>afganistanilainen<s n="adj"/></l><r>afguanielaine<s n="adj"/></r></p></e>
     <e><p><l>afrikkalainen<s n="adj"/></l><r>afriekkalaine<s n="adj"/></r></p></e>
     <e r="RL"><p><l>ääretön<s n="adj"/></l><r>agjatoi<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>reunimmainen<s n="adj"/></l><r>agjimaine<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>laitimmainen<s n="adj"/></l><r>agjimaine<s n="adj"/></r></p></e>
     <e><p><l>agressiivinen<s n="adj"/></l><r>agressiivine<s n="adj"/></r></p></e>
     <e><p><l>ahavainen<s n="adj"/></l><r>ahavu<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>ahavoitunut<s n="adj"/></l><r>ahavoittu<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>kälvitetty<s n="adj"/></l><r>ahavoittu<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>kuivattu<s n="adj"/></l><r>ahavoittu<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>kylmätuulinen<s n="adj"/></l><r>ahavu<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ahavoitunut<s n="adj"/></l><r>ahavoittu<s n="adj"/></r></p></e>
     <e><p><l>ahdas<s n="adj"/></l><r>ahtas<s n="adj"/></r></p></e>
     <e><p><l>ahdistava<s n="adj"/></l><r>ahtistai<s n="adj"/></r></p></e>
     <e><p><l>ahkera<s n="adj"/></l><r>ahkeru<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>ahne<s n="adj"/></l><r>ahnakko<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>hanakka<s n="adj"/></l><r>ahnakko<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>perso<s n="adj"/></l><r>ahnakko<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>ahne<s n="adj"/></l><r>ahnas<s n="adj"/></r></p></e>
     <e><p><l>ahnas<s n="adj"/></l><r>ahnakko<s n="adj"/></r></p></e>
     <e><p><l>ahnas<s n="adj"/></l><r>ahnas<s n="adj"/></r></p></e>
     <e><p><l>ahne<s n="adj"/></l><r>ahneh<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>vaikeahko<s n="adj"/></l><r>ahtahahko<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>ahtaanpuoleinen<s n="adj"/></l><r>ahtahahko<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>tukalahko<s n="adj"/></l><r>ahtahahko<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>ahtaahko<s n="adj"/></l><r>ahtahahko<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ahne<s n="adj"/></l><r>ahnakko<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ahne<s n="adj"/></l><r>ahnas<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ahtaahko<s n="adj"/></l><r>ahtahahko<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ahtaanpuoleinen<s n="adj"/></l><r>ahtahahko<s n="adj"/></r></p></e>
     <e><p><l>aiempi<s n="adj"/></l><r>aijembi<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>varhainen<s n="adj"/></l><r>aigahine<s n="adj"/></r></p></e>
     <e r="RL"><p><l>aikainen<s n="adj"/></l><r>aigaine<s n="adj"/></r></p></e>
     <e r="RL"><p><l>varhainen<s n="adj"/></l><r>aigaine<s n="adj"/></r></p></e>
     <e r="RL"><p><l>väliaikainen<s n="adj"/></l><r>aijalline<s n="adj"/></r></p></e>
     <e r="RL"><p><l>maallinen<s n="adj"/></l><r>aijalline<s n="adj"/></r></p></e>
     <e r="RL"><p><l>aikaisempi<s n="adj"/></l><r>aijembaine<s n="adj"/></r></p></e>
     <e><p><l>aikainen<s n="adj"/></l><r>aigahine<s n="adj"/></r></p></e>
+    <e><p><l>aikuinen<s n="adj"/></l><r>aiguhine<s n="adj"/></r></p></e>
     <e><p><l>ainainen<s n="adj"/></l><r>ainaine<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>upouusi<s n="adj"/></l><r>ainosuuzi<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>tuliterä<s n="adj"/></l><r>ainosuuzi<s n="adj"/></r></p></e>
+    <e><p><l>aineellis-tekninen<s n="adj"/></l><r>ainehellis-tehnine<s n="adj"/></r></p></e>
+    <e><p><l>ainoa<s n="adj"/></l><r>aino<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>ainoa<s n="adj"/></l><r>ainovu<s n="adj"/></r></p></e>
     <e><p><l>aitaamaton<s n="adj"/></l><r>aiduamatoi<s n="adj"/></r></p></e>
     <e><p><l>ajallinen<s n="adj"/></l><r>aijalline<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>loputon<s n="adj"/></l><r>alevumatoi<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ajamaton<s n="adj"/></l><r>ajamatoi<s n="adj"/></r></p></e>
+    <e><p><l>ajankohtainen<s n="adj"/></l><r>aktualine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>akanmies<s n="adj"/></l><r>akakas<s n="adj"/></r></p></e>
+    <e><p><l>akateeminen<s n="adj"/></l><r>akadeemine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>akaton<s n="adj"/></l><r>akatoi<s n="adj"/></r></p></e>
+    <e><p><l>akkamainen<s n="adj"/></l><r>akoin<s n="adj"/></r></p></e>
+    <e><p><l>aktiivinen<s n="adj"/></l><r>aktiivine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>aktuaalinen<s n="adj"/></l><r>aktualine<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>alakerrassa asuva<s n="adj"/></l><r>alahaine<s n="adj"/></r></p></e>
+    <e><p><l>alaikäinen<s n="adj"/></l><r>alaigäine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>alakerrassa oleva<s n="adj"/></l><r>alahaine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>alakuloinen<s n="adj"/></l><r>abei<s n="adj"/></r></p></e>
+    <e><p><l>alamainen<s n="adj"/></l><r>alamaine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>alapuolella asuva<s n="adj"/></l><r>alahaine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>alapuolella oleva<s n="adj"/></l><r>alahaine<s n="adj"/></r></p></e>
+    <e><p><l>alaston<s n="adj"/></l><r>alastoi<s n="adj"/></r></p></e>
+    <e><p><l>alava<s n="adj"/></l><r>alahaine<s n="adj"/></r></p></e>
+    <e><p><l>alava<s n="adj"/></l><r>alavu<s n="adj"/></r></p></e>
+    <e><p><l>alempi<s n="adj"/></l><r>alembaine<s n="adj"/></r></p></e>
+    <e><p><l>alempi<s n="adj"/></l><r>alembi<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>alhaalla oleva<s n="adj"/></l><r>alahaine<s n="adj"/></r></p></e>
+    <e><p><l>alin<s n="adj"/></l><r>alin<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>alituinen<s n="adj"/></l><r>alalline<s n="adj"/></r></p></e>
+    <e><p><l>alkanut<s n="adj"/></l><r>algavunnuh<s n="adj"/></r></p></e>
+    <e><p><l>alkuperäinen<s n="adj"/></l><r>alguperäine<s n="adj"/></r></p></e>
+    <e><p><l>aluehallinnollinen<s n="adj"/></l><r>aloveh-administratiivine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>apea<s n="adj"/></l><r>abei<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>haikea<s n="adj"/></l><r>abei<s n="adj"/></r></p></e>
     <e r="LR"><p><l>hallinnollinen<s n="adj"/></l><r>administratiivine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>hanakka<s n="adj"/></l><r>ahnakko<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>herkeämätön<s n="adj"/></l><r>alevumatoi<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>kokovillainen<s n="adj"/></l><r>ainosvillaine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>kuivattu<s n="adj"/></l><r>ahavoittu<s n="adj"/></r></p></e>
+    <e><p><l>kulkukelvoton<s n="adj"/></l><r>ajamatoi<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>hauska<s n="adj"/></l><r>kummakas<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>ivallinen<s n="adj"/></l><r>kummakas<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>kylmätuulinen<s n="adj"/></l><r>ahavu<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>kälvitetty<s n="adj"/></l><r>ahavoittu<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>laitimmainen<s n="adj"/></l><r>agjimaine<s n="adj"/></r></p></e>
+    <e><p><l>lakkaamaton<s n="adj"/></l><r>alevumatoi<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>loputon<s n="adj"/></l><r>alevumatoi<s n="adj"/></r></p></e>
     <e><p><l>loputon<s n="adj"/></l><r>agjatoi<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>matala<s n="adj"/></l><r>alahaine<s n="adj"/></r></p></e>
     <e><p><l>melko aikainen<s n="adj"/></l><r>aijahko<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>perso<s n="adj"/></l><r>ahnakko<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>pitempiaikainen<s n="adj"/></l><r>alalline<s n="adj"/></r></p></e>
     <e r="RL"><p><l>äärimmäinen<s n="adj"/></l><r>rannimbaine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>reunimmainen<s n="adj"/></l><r>agjimaine<s n="adj"/></r></p></e>
     <e><p><l>surullinen<s n="adj"/></l><r>abei<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>toimelias<s n="adj"/></l><r>aktiivine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>tukalahko<s n="adj"/></l><r>ahtahahko<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>tuliterä<s n="adj"/></l><r>ainosuuzi<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>tyyntymätön<s n="adj"/></l><r>alevumatoi<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>täysi-ikäinen<s n="adj"/></l><r>aiguhine<s n="adj"/></r></p></e>
+    <e><p><l>täysvillainen<s n="adj"/></l><r>ainosvillaine<s n="adj"/></r></p></e>
+    <e><p><l>upouusi<s n="adj"/></l><r>ainosuuzi<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>vaikeahko<s n="adj"/></l><r>ahtahahko<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>vaimoton<s n="adj"/></l><r>akatoi<s n="adj"/></r></p></e>
+    <e><p><l>vakinainen<s n="adj"/></l><r>alalline<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>vakituinen<s n="adj"/></l><r>alalline<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>varhainen<s n="adj"/></l><r>aigahine<s n="adj"/></r></p></e>
     <e><p><l>äärimmäinen<s n="adj"/></l><r>agjimaine<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>aikaa<s n="adv"/></l><r>aiga<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>aika<s n="adv"/></l><r>aiga<s n="adv"/></r></p></e>
 
 
     <!-- }}} -->
@@ -387,6 +436,8 @@
     <e><p><l>ylen<s n="adv"/></l><r>ylen<s n="adv"/></r></p></e>
     <e><p><l>ympärille<s n="adv"/></l><r>ymbäri<s n="adv"/></r></p></e>
     <e><p><l>ympäri<s n="adv"/></l><r>ymbäri<s n="adv"/></r></p></e>
+
+    <e r="LR"><p><l>aika<s n="adv"/></l><r>aiga<s n="adv"/></r></p></e>
 
     <!-- }}} -->
 
