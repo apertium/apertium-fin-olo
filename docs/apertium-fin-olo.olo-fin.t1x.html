@@ -1,0 +1,1211 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>
+         apertium-fin-olo :
+         Apertium-fin-olo bilingual rules and resources
+         
+      </title>
+      <meta name="generator" content="apevis-xslt">
+      <meta property="og:title" content="&#xA;            apertium-fin-olo">
+      <meta property="og:locale" content="en">
+      <meta name="description" content="Finnish–Karelian&#xA;            dictionary for rule-based machine translation&#xA;          ">
+      <link rel="canonical" href="%0A            https://apertium.github.io/apertium-fin-olo/%0A          ">
+      <meta property="og:url" content="&#xA;            https://apertium.github.io/apertium-fin-olo/&#xA;          ">
+      <meta property="og:site_name" content="&#xA;            apertium-fin-olo"><script type="application/ld+json">
+          {"headline":"Apertium-fin-olo",
+          "@type":"WebSite",
+          "url":"http://apertium.github.io/apertium-fin-olo/",
+          "name":"apertium-fin-olo",
+          "description":"Apertium bilingual data for Finnish–Karelian machine translation",
+          "@context":"http://schema.org"}
+        </script><link rel="stylesheet" href="/apertium-fin-olo/assets/css/style.css?v=0553eb4429e442aa5eeaa159606840983213fbbe"><script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script><script src="/apertium-fin-deu/assets/js/respond.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+   </head>
+   <body>
+      <div id="header">
+         <nav>
+            <li class="fork"><a href="https://github.com/apertium/apertium-fin-olo">
+                  View On GitHub
+                  </a></li>
+         </nav>
+      </div>
+      <div class="wrapper">
+         <section>
+            <div id="title">
+               <h1>apertium-fin-olo</h1>
+               <p>Finnish–Karelian
+                  dictionary for rule-based machine translation
+                  
+               </p>
+               <hr><span class="credits left">
+                  Project maintained by 
+                  <a href="https://github.com/apertium">apertium</a></span><span class="credits right">
+                  Hosted on GitHub Pages – Theme by
+                  <a href="https://twitter.com/michigangraham">mattgraham</a></span></div>
+            <h1 id="rules">
+               Apertium-fin-olo:
+               Finnish–Karelian
+               machine translation rules
+               
+            </h1>
+            <p style="font-variant: italic">
+               This is a visualisation of some rules in apertium transfer.
+               
+            </p>
+            
+            
+            <h2>Categories (parts of chunks)</h2>
+            <p>
+               These are the categories Apertium is using in order to chunk, re-order
+               and transfer lexemes.
+               
+            </p>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Category</th>
+                     <th>Items</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  
+                  <tr>
+                     <td>pron</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;prn.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>nom</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;n.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>verb</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;vblex.*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>sent</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;sent&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>qst</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;qst&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>default</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;*&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+               </tbody>
+            </table>
+            
+            
+            <h2>Attributes</h2>
+            <p>
+               These are the morphological analysis value (tag) sets that can be
+               processed in the transfer.
+               
+            </p>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Attribute set name</th>
+                     <th>Tags</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  
+                  <tr>
+                     <td>a_act</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;act&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_nom</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;n&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_cas</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;nom&gt;</code></li>
+                           
+                           <li><code>&lt;acc&gt;</code></li>
+                           
+                           <li><code>&lt;ill&gt;</code></li>
+                           
+                           <li><code>&lt;par&gt;</code></li>
+                           
+                           <li><code>&lt;ess&gt;</code></li>
+                           
+                           <li><code>&lt;gen&gt;</code></li>
+                           
+                           <li><code>&lt;loc&gt;</code></li>
+                           
+                           <li><code>&lt;com&gt;</code></li>
+                           
+                           <li><code>&lt;abe&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_nbr</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;sg&gt;</code></li>
+                           
+                           <li><code>&lt;pl&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_adpos</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;pr&gt;</code></li>
+                           
+                           <li><code>&lt;po&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_person</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;sg1&gt;</code></li>
+                           
+                           <li><code>&lt;du1&gt;</code></li>
+                           
+                           <li><code>&lt;pl1&gt;</code></li>
+                           
+                           <li><code>&lt;sg2&gt;</code></li>
+                           
+                           <li><code>&lt;du2&gt;</code></li>
+                           
+                           <li><code>&lt;pl2&gt;</code></li>
+                           
+                           <li><code>&lt;sg3&gt;</code></li>
+                           
+                           <li><code>&lt;du3&gt;</code></li>
+                           
+                           <li><code>&lt;pl3&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_prn</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;prn&gt;</code></li>
+                           
+                           <li><code>&lt;prn.rel&gt;</code></li>
+                           
+                           <li><code>&lt;prn.res&gt;</code></li>
+                           
+                           <li><code>&lt;prn.ind&gt;</code></li>
+                           
+                           <li><code>&lt;prn.dem&gt;</code></li>
+                           
+                           <li><code>&lt;prn.pers&gt;</code></li>
+                           
+                           <li><code>&lt;prn&gt;</code></li>
+                           
+                           <li><code>&lt;prn.itg&gt;</code></li>
+                           
+                           <li><code>&lt;prn.ref&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_poss</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;pxsg1&gt;</code></li>
+                           
+                           <li><code>&lt;pxsg2&gt;</code></li>
+                           
+                           <li><code>&lt;pxsg3&gt;</code></li>
+                           
+                           <li><code>&lt;pxdu1&gt;</code></li>
+                           
+                           <li><code>&lt;pxdu2&gt;</code></li>
+                           
+                           <li><code>&lt;pxdu3&gt;</code></li>
+                           
+                           <li><code>&lt;pxpl1&gt;</code></li>
+                           
+                           <li><code>&lt;pxpl2&gt;</code></li>
+                           
+                           <li><code>&lt;pxpl3&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_trans</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;iv&gt;</code></li>
+                           
+                           <li><code>&lt;tv&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td>a_deriv</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;der_dimin.n&gt;</code></li>
+                           
+                           <li><code>&lt;der_at&gt;</code></li>
+                           
+                           <li><code>&lt;der_goahti&gt;</code></li>
+                           
+                           <li><code>&lt;der_l&gt;</code></li>
+                           
+                           <li><code>&lt;der_ahtti&gt;</code></li>
+                           
+                           <li><code>&lt;der_vuohta&gt;</code></li>
+                           
+                           <li><code>&lt;der_d&gt;</code></li>
+                           
+                           <li><code>&lt;der_lágan&gt;</code></li>
+                           
+                           <li><code>&lt;der_nammasaš&gt;</code></li>
+                           
+                           <li><code>&lt;der_saš&gt;</code></li>
+                           
+                           <li><code>&lt;der_laš&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                     <td>a_sem</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;sem_act&gt;</code></li>
+                           
+                           <li><code>&lt;sem_act_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_amount&gt;</code></li>
+                           
+                           <li><code>&lt;sem_amount_semcon&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_body-abstr_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_build_hum_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_build-part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_group&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_group_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_aniprod&gt;</code></li>
+                           
+                           <li><code>&lt;sem_aniprod_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_aniprod_obj-clo&gt;</code></li>
+                           
+                           <li><code>&lt;sem_aniprod_perc-phys&gt;</code></li>
+                           
+                           <li><code>&lt;sem_aniprod_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ani_veh&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body-abstr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body-abstr_prod-audio_semcon&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_clth&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_food&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_group_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_mat&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_measr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_body_time&gt;</code></li>
+                           
+                           <li><code>&lt;sem_build&gt;</code></li>
+                           
+                           <li><code>&lt;sem_build_edu_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_build_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_build-part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_cat&gt;</code></li>
+                           
+                           <li><code>&lt;sem_clth&gt;</code></li>
+                           
+                           <li><code>&lt;sem_clth-jewl&gt;</code></li>
+                           
+                           <li><code>&lt;sem_clth-jewl_curr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_clth-jewl_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_clth-part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain-abstr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain-clth&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain-clth_veh&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain_furn&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ctain_tool&gt;</code></li>
+                           
+                           <li><code>&lt;sem_curr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_dance&gt;</code></li>
+                           
+                           <li><code>&lt;sem_domain&gt;</code></li>
+                           
+                           <li><code>&lt;sem_drink&gt;</code></li>
+                           
+                           <li><code>&lt;sem_dummytag&gt;</code></li>
+                           
+                           <li><code>&lt;sem_edu&gt;</code></li>
+                           
+                           <li><code>&lt;sem_edu_mat&gt;</code></li>
+                           
+                           <li><code>&lt;sem_edu_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_event&gt;</code></li>
+                           
+                           <li><code>&lt;sem_event_food&gt;</code></li>
+                           
+                           <li><code>&lt;sem_event_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_event_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-measr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-measr_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-phys&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-phys_tool-write&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-phys_veh&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-phys_wthr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat_plant&gt;</code></li>
+                           
+                           <li><code>&lt;sem_feat-psych&gt;</code></li>
+                           
+                           <li><code>&lt;sem_food&gt;</code></li>
+                           
+                           <li><code>&lt;sem_food-med&gt;</code></li>
+                           
+                           <li><code>&lt;sem_food_plant&gt;</code></li>
+                           
+                           <li><code>&lt;sem_furn&gt;</code></li>
+                           
+                           <li><code>&lt;sem_game_obj-play&gt;</code></li>
+                           
+                           <li><code>&lt;sem_geom&gt;</code></li>
+                           
+                           <li><code>&lt;sem_group&gt;</code></li>
+                           
+                           <li><code>&lt;sem_group_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_group_hum_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_lang&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_lang_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_obj&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_tool&gt;</code></li>
+                           
+                           <li><code>&lt;sem_hum_veh&gt;</code></li>
+                           
+                           <li><code>&lt;sem_ideol&gt;</code></li>
+                           
+                           <li><code>&lt;sem_lang&gt;</code></li>
+                           
+                           <li><code>&lt;sem_lang_tool&gt;</code></li>
+                           
+                           <li><code>&lt;sem_mat&gt;</code></li>
+                           
+                           <li><code>&lt;sem_mat_plant&gt;</code></li>
+                           
+                           <li><code>&lt;sem_mat_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_measr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_measr_time&gt;</code></li>
+                           
+                           <li><code>&lt;sem_money&gt;</code></li>
+                           
+                           <li><code>&lt;sem_money_obj&gt;</code></li>
+                           
+                           <li><code>&lt;sem_money_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-clo&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-el&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-ling&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-play&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-rope&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj_semcon&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj_state&gt;</code></li>
+                           
+                           <li><code>&lt;sem_obj-surfc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_org&gt;</code></li>
+                           
+                           <li><code>&lt;sem_org_rule&gt;</code></li>
+                           
+                           <li><code>&lt;sem_org_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_part_prod-cogn&gt;</code></li>
+                           
+                           <li><code>&lt;sem_perc-emo&gt;</code></li>
+                           
+                           <li><code>&lt;sem_perc-phys&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plant&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plant-part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plant_plant-part&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-abstr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-abstr_rel_state&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-abstr_route&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-elevate&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-line&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_pos&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_route&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_substnc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_substnc_wthr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_time&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_tool-catch&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc-water&gt;</code></li>
+                           
+                           <li><code>&lt;sem_plc_wthr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_pos&gt;</code></li>
+                           
+                           <li><code>&lt;sem_process&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-audio&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-audio_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-cogn&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-cogn_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-ling&gt;</code></li>
+                           
+                           <li><code>&lt;sem_prod-vis&gt;</code></li>
+                           
+                           <li><code>&lt;sem_rel&gt;</code></li>
+                           
+                           <li><code>&lt;sem_route&gt;</code></li>
+                           
+                           <li><code>&lt;sem_rule&gt;</code></li>
+                           
+                           <li><code>&lt;sem_semcon&gt;</code></li>
+                           
+                           <li><code>&lt;sem_semcon_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_sign&gt;</code></li>
+                           
+                           <li><code>&lt;sem_state&gt;</code></li>
+                           
+                           <li><code>&lt;sem_state-sick&gt;</code></li>
+                           
+                           <li><code>&lt;sem_substnc&gt;</code></li>
+                           
+                           <li><code>&lt;sem_substnc_wthr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_sur&gt;</code></li>
+                           
+                           <li><code>&lt;sem_time&gt;</code></li>
+                           
+                           <li><code>&lt;sem_time_wthr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-catch&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-clean&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-it&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-measr&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-music&gt;</code></li>
+                           
+                           <li><code>&lt;sem_tool-write&gt;</code></li>
+                           
+                           <li><code>&lt;sem_txt&gt;</code></li>
+                           
+                           <li><code>&lt;sem_veh&gt;</code></li>
+                           
+                           <li><code>&lt;sem_wpn&gt;</code></li>
+                           
+                           <li><code>&lt;sem_wthr&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                     <td>a_func</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;@→A&gt;</code></li>
+                           
+                           <li><code>&lt;@A←&gt;</code></li>
+                           
+                           <li><code>&lt;@←ADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@→ADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL←&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL→&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL→CS&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@ADVL→SUBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@APP&gt;</code></li>
+                           
+                           <li><code>&lt;@APP-ADVL←&gt;</code></li>
+                           
+                           <li><code>&lt;@APP-N←&gt;</code></li>
+                           
+                           <li><code>&lt;@APP-Num←&gt;</code></li>
+                           
+                           <li><code>&lt;@APP-Pron←&gt;</code></li>
+                           
+                           <li><code>&lt;@APP→Pron&gt;</code></li>
+                           
+                           <li><code>&lt;@→CC&gt;</code></li>
+                           
+                           <li><code>&lt;@CNP&gt;</code></li>
+                           
+                           <li><code>&lt;@COMP-CS←&gt;</code></li>
+                           
+                           <li><code>&lt;@CVP&gt;</code></li>
+                           
+                           <li><code>&lt;@-F←ADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@-FADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@-FADVL→&gt;</code></li>
+                           
+                           <li><code>&lt;@-FAUXV&gt;</code></li>
+                           
+                           <li><code>&lt;@\+FAUXV&gt;</code></li>
+                           
+                           <li><code>&lt;@+FAUXV&gt;</code></li>
+                           
+                           <li><code>&lt;@-FMAINV&gt;</code></li>
+                           
+                           <li><code>&lt;@\+FMAINV&gt;</code></li>
+                           
+                           <li><code>&lt;@+FMAINV&gt;</code></li>
+                           
+                           <li><code>&lt;@-F←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@-FOBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@-FOBJ→&gt;</code></li>
+                           
+                           <li><code>&lt;@-F←OPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@-FOPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@-F←SPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@-FSPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@-FSUBJ→&gt;</code></li>
+                           
+                           <li><code>&lt;@HAB&gt;</code></li>
+                           
+                           <li><code>&lt;←hab→&gt;</code></li>
+                           
+                           <li><code>&lt;@HNOUN&gt;</code></li>
+                           
+                           <li><code>&lt;@INTERJ&gt;</code></li>
+                           
+                           <li><code>&lt;@→N&gt;</code></li>
+                           
+                           <li><code>&lt;@N&gt;</code></li>
+                           
+                           <li><code>&lt;@N←&gt;</code></li>
+                           
+                           <li><code>&lt;@→Num;&gt;</code></li>
+                           
+                           <li><code>&lt;@→Num&gt;</code></li>
+                           
+                           <li><code>&lt;@Num←&gt;</code></li>
+                           
+                           <li><code>&lt;@←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@OBJ→&gt;</code></li>
+                           
+                           <li><code>&lt;@OBJ→SPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@-OPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@←OPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@OPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@OPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@→P&gt;</code></li>
+                           
+                           <li><code>&lt;@P←&gt;</code></li>
+                           
+                           <li><code>&lt;@PCLE&gt;</code></li>
+                           
+                           <li><code>&lt;@←PPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@PPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@→Pron&gt;</code></li>
+                           
+                           <li><code>&lt;@Pron←&gt;</code></li>
+                           
+                           <li><code>&lt;@-SPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@←SPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@SPRED&gt;</code></li>
+                           
+                           <li><code>&lt;@SPRED→&gt;</code></li>
+                           
+                           <li><code>&lt;@SPRED←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@←SUBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@SUBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@SUBJ→&gt;</code></li>
+                           
+                           <li><code>&lt;@SUBJ←ADVL&gt;</code></li>
+                           
+                           <li><code>&lt;@SUBJ←OBJ&gt;</code></li>
+                           
+                           <li><code>&lt;@VOC&gt;</code></li>
+                           
+                           <li><code>&lt;@X&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                     <td>x_func</td>
+                     <td>
+                        <ul>
+                           
+                           <li><code>&lt;←ext→&gt;</code></li>
+                           
+                           <li><code>&lt;←hab→&gt;</code></li>
+                           
+                        </ul>
+                     </td>
+                  </tr>
+                  
+                  
+                  
+               </tbody>
+            </table>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <h2>Macros</h2>
+            <p>Macros are helper functions in apertium transfer files.</p>
+            
+            <h3>remove-semtag1</h3>
+            <div>Parametres: 1</div><code>
+               <ol>
+                  
+                  <li>
+                     let <em>tl[1]['a_sem']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h2>Rules</h2>
+            <p>The actual rules concerning stuff.</p>
+            
+            
+            
+            <h3>REGLA: pron</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>pron</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtag1($1)</li>
+                  
+                  <li>
+                     let <em>tl[1]['x_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['a_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['a_poss']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  	
+                  <li>
+                     <ol>
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cas']</em> ≟ &lt;acc&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cas']</em> ≔ &lt;par&gt;
+                              </li>
+                           </ol>
+                        </li>
+                     </ol>
+                  </li>
+                  
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>pron
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: nom</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>nom</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtag1($1)</li>
+                  
+                  <li>
+                     let <em>tl[1]['x_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['a_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['a_poss']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  	
+                  <li>
+                     <ol>
+                        <li>if 
+                           <li>
+                              <ol>
+                                 <li><em>tl[1]['a_cas']</em> ≟ &lt;acc&gt;
+                                 </li>
+                              </ol>
+                           </li> then:
+                           <ol>
+                              <li>
+                                 let <em>tl[1]['a_cas']</em> ≔ &lt;gen&gt;
+                              </li>
+                           </ol>
+                        </li>
+                     </ol>
+                  </li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>nom
+                              &lt;SN&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: verb</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>verb</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>remove-semtag1($1)</li>
+                  
+                  <li>
+                     let <em>tl[1]['x_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['a_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['a_act']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>v
+                              &lt;SV&gt;
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: DEFAULT</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>default</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>
+                     let <em>tl[1]['a_sem']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['x_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['a_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol>
+                              <li>
+                                 <em>tl[1]['whole']</em>
+                                 
+                              </li>
+                           </ol>]<sub>default
+                              <em>sl[1]['a_func']</em>
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            <h3>REGLA: DEFAULT QST</h3>
+            
+            <h4>Matching pattern:</h4>
+            <ol>
+               
+               <li>default</li>
+               
+               <li>qst</li>
+               
+            </ol>
+            
+            <h4>Action:</h4><code>
+               <ol>
+                  
+                  <li>
+                     let <em>tl[1]['a_sem']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['x_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>
+                     let <em>tl[1]['a_func']</em> ≔ 
+                     ""
+                     
+                  </li>
+                  
+                  <li>Output: 
+                     <ol>
+                        
+                        <li>
+                           [
+                           <ol></ol>]<sub>default
+                              <em>sl[1]['a_func']</em>
+                              </sub></li>
+                        
+                     </ol>
+                  </li>
+                  
+               </ol></code>
+            
+            
+            
+            
+         </section>
+         <div id="footer">
+            Documentation for <a href="//github.com/apertium/apertium-fin-olo/">
+               apertium-fin-olo</a>
+            Generated with <a href="https://github.com/flammie/apevis-xslt">Flammie’s
+               apevis-xslt</a>.
+            
+         </div>
+      </div>
+   </body>
+</html>

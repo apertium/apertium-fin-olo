@@ -1,6 +1,8 @@
 ###############################################################################
-## Makefile for Northern Saami--Inari Saami
+## Makefile for Finnish--Karelian
 ###############################################################################
+
+SUBDIRS=docs
 
 VERSION=0.0.1
 LANG1=fin
