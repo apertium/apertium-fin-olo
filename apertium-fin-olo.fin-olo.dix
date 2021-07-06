@@ -20,6 +20,7 @@
     <sdef n="part"      c="Adverb"/>
     <sdef n="cnjcoo"   c="Coordinating conjunction"/>
     <sdef n="cnjsub"   c="Subordinating conjunction"/>
+    <sdef n="cnjadv"   c="Adverbal conjunction"/>
 
     <sdef n="iv"       c="Intransitive"/>
     <sdef n="tv"       c="Transitive"/>
