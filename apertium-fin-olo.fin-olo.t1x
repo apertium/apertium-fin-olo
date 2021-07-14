@@ -341,10 +341,10 @@
       <attr-item tags="@-FADVL→"/>
       <attr-item tags="@-FAUXV"/>
       <attr-item tags="@\+FAUXV"/>
-      <attr-item tags="@+FAUXV"/>
+<!--      <attr-item tags="@+FAUXV"/> -->
       <attr-item tags="@-FMAINV"/>
       <attr-item tags="@\+FMAINV"/>
-      <attr-item tags="@+FMAINV"/>
+<!--      <attr-item tags="@+FMAINV"/> -->
       <attr-item tags="@-F←OBJ"/>
       <attr-item tags="@-FOBJ"/>
       <attr-item tags="@-FOBJ→"/>
