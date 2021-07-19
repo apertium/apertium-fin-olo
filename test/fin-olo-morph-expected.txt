@@ -1,0 +1,8 @@
+[2rSB-1okT3Pe#0] ^geenistähänkö/-geeninen<adj><pst><sg><par><px3sp><use_archaic>+ko<qst>/geeni<n><sg><ela><px3sp><use_archaic>+ko<qst>$
+[/2rSB-1okT3Pe]
+[OQ5Xjwu2Yo2V#0] ^25 6/25 6<num><card><sg><nom>/25 6<num><card><sp>$
+[/OQ5Xjwu2Yo2V]
+[XCjrZUBN-PuL#0] ^uskoisempiinsako/-uskoinen<adj><comp><pl><ill><px3sp>+ko<qst>/-uskoinen<adj><comp><sg><ill><px3sp>+ko<qst>$
+[/XCjrZUBN-PuL]
+[sLGPnWFi6Y_w#0] ^Ž-/Ž<n><acr><compound-only-L>/ž<n><acr><compound-only-L>$
+[/sLGPnWFi6Y_w]

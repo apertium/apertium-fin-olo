@@ -1,0 +1,10 @@
+[OXPgIukyIPkh#0] ^-<punct>$
+[/OXPgIukyIPkh]
+[pNOg2NpwgmT7#0] ^Zürich<np><prop><sg><par><clt_bo>$
+[/pNOg2NpwgmT7]
+[pcrjCk0ScPwo#0] ^@žyri<n><sg><par><clt_bo>$
+[/pcrjCk0ScPwo]
+[xLcEVXYoQlEt#0] ^nokkosikko<n><pl><com><clt_bo>$
+[/xLcEVXYoQlEt]
+[zbTuKuppzGqD#0] ^.<punct>$
+[/zbTuKuppzGqD]

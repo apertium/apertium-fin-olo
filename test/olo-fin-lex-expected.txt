@@ -1,0 +1,10 @@
+[OXPgIukyIPkh#0] ^-<guio>/-<punct>$
+[/OXPgIukyIPkh]
+[pNOg2NpwgmT7#0] ^Tsʼurih<np><prop><sg><par><clt_bo><@X>/Zürich<np><prop><sg><par><clt_bo><@X>$
+[/pNOg2NpwgmT7]
+[pcrjCk0ScPwo#0] ^žyri<n><sg><par><clt_bo><@X>/@žyri<n><sg><par><clt_bo><@X>$
+[/pcrjCk0ScPwo]
+[xLcEVXYoQlEt#0] ^šiiloižikko<n><pl><com><clt_bo><@HNOUN>/nokkosikko<n><pl><com><clt_bo><@HNOUN>/nokkoset<n><pl><com><clt_bo><@HNOUN>/nokkospehko<n><pl><com><clt_bo><@HNOUN>/nokkospuska<n><pl><com><clt_bo><@HNOUN>$
+[/xLcEVXYoQlEt]
+[zbTuKuppzGqD#0] ^.<sent>/.<punct>$
+[/zbTuKuppzGqD]

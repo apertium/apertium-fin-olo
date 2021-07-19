@@ -1,0 +1,8 @@
+[2rSB-1okT3Pe#0] ^@-geeninen<adj><pst><sg><par><px3sp><use_archaic>+go<qst>$
+[/2rSB-1okT3Pe]
+[OQ5Xjwu2Yo2V#0] ^@25 6<num><card><sg><nom>$
+[/OQ5Xjwu2Yo2V]
+[XCjrZUBN-PuL#0] ^@-uskoinen<adj><comp><pl><ill><px3sp>+go<qst>$
+[/XCjrZUBN-PuL]
+[sLGPnWFi6Y_w#0] ^@Ž<n><acr><compound-only-L>$
+[/sLGPnWFi6Y_w]

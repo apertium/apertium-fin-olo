@@ -1,0 +1,10 @@
+{
+    "fin-olo": {
+        "input": "fin-olo-input.txt",
+        "mode": "fin-olo"
+    },
+    "olo-fin": {
+        "input": "olo-fin-input.txt",
+        "mode": "olo-fin"
+    }
+}

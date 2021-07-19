@@ -1,0 +1,10 @@
+[OXPgIukyIPkh#0] ^default{^-<punct>$}$
+[/OXPgIukyIPkh]
+[pNOg2NpwgmT7#0] ^default<@X>{^Zürich<np><prop><sg><par><clt_bo>$}$
+[/pNOg2NpwgmT7]
+[pcrjCk0ScPwo#0] ^nom<SN>{^@žyri<n><sg><par><clt_bo>$}$
+[/pcrjCk0ScPwo]
+[xLcEVXYoQlEt#0] ^nom<SN>{^nokkosikko<n><pl><com><clt_bo>$}$
+[/xLcEVXYoQlEt]
+[zbTuKuppzGqD#0] ^default{^.<punct>$}$
+[/zbTuKuppzGqD]
