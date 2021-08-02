@@ -42,7 +42,7 @@ bidix2md.xslt:
 tix2md.xslt:
 	wget https://raw.githubusercontent.com/flammie/apevis-xslt/master/$@
 
-dix2stats.xslt:
+dix2statistic-markdown.xslt:
 	wget https://raw.githubusercontent.com/flammie/apevis-xslt/master/$@
 
 $(BASENAME).$(PREFIX1).dix.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX1).dix bidix2md.xslt
@@ -69,26 +69,26 @@ $(BASENAME).$(PREFIX2).t2x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX2).t2x ti
 $(BASENAME).$(PREFIX2).t3x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX2).t3x tix2md.xslt
 	$(SAXON) -s:$< tix2md.xslt  from=$(LANG1HTML) to=$(LANG2HTML) pair=$(PREFIX1) antipair=$(PREFIX2)  > $@
 
-stats-$(BASENAME).$(PREFIX1).dix.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX1).dix dix2stats.xslt
-	$(SAXON) -s:$< dix2stats.xslt > $@
+stats-$(BASENAME).$(PREFIX1).dix.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX1).dix dix2statistic-markdown.xslt
+	$(SAXON) -s:$< dix2statistic-markdown.xslt from=$(LANG1HTML) to=$(LANG2HTML) pair=$(PREFIX1) to=$(PREFIX2) > $@
 
-stats-$(BASENAME).$(PREFIX1).t1x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX1).t1x dix2stats.xslt
-	$(SAXON) -s:$< dix2stats.xslt > $@
+stats-$(BASENAME).$(PREFIX1).t1x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX1).t1x dix2statistic-markdown.xslt
+	$(SAXON) -s:$< dix2statistic-markdown.xslt from=$(LANG1HTML) to=$(LANG2HTML) pair=$(PREFIX1) to=$(PREFIX2) > $@
 
-stats-$(BASENAME).$(PREFIX1).t2x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX1).t2x dix2stats.xslt
-	$(SAXON) -s:$< dix2stats.xslt > $@
+stats-$(BASENAME).$(PREFIX1).t2x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX1).t2x dix2statistic-markdown.xslt
+	$(SAXON) -s:$< dix2statistic-markdown.xslt from=$(LANG1HTML) to=$(LANG2HTML) pair=$(PREFIX1) to=$(PREFIX2) > $@
 
-stats-$(BASENAME).$(PREFIX1).t3x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX1).t3x dix2stats.xslt
-	$(SAXON) -s:$< dix2stats.xslt > $@
+stats-$(BASENAME).$(PREFIX1).t3x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX1).t3x dix2statistic-markdown.xslt
+	$(SAXON) -s:$< dix2statistic-markdown.xslt from=$(LANG1HTML) to=$(LANG2HTML) pair=$(PREFIX1) to=$(PREFIX2) > $@
 
-stats-$(BASENAME).$(PREFIX2).t1x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX2).t1x dix2stats.xslt
-	$(SAXON) -s:$< dix2stats.xslt > $@
+stats-$(BASENAME).$(PREFIX2).t1x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX2).t1x dix2statistic-markdown.xslt
+	$(SAXON) -s:$< dix2statistic-markdown.xslt from=$(LANG1HTML) to=$(LANG2HTML) pair=$(PREFIX1) to=$(PREFIX2) > $@
 
-stats-$(BASENAME).$(PREFIX2).t2x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX2).t2x dix2stats.xslt
-	$(SAXON) -s:$< dix2stats.xslt > $@
+stats-$(BASENAME).$(PREFIX2).t2x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX2).t2x dix2statistic-markdown.xslt
+	$(SAXON) -s:$< dix2statistic-markdown.xslt from=$(LANG1HTML) to=$(LANG2HTML) pair=$(PREFIX1) to=$(PREFIX2) > $@
 
-stats-$(BASENAME).$(PREFIX2).t3x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX2).t3x dix2stats.xslt
-	$(SAXON) -s:$< dix2stats.xslt > $@
+stats-$(BASENAME).$(PREFIX2).t3x.markdown: $(top_srcdir)/$(BASENAME).$(PREFIX2).t3x dix2statistic-markdown.xslt
+	$(SAXON) -s:$< dix2statistic-markdown.xslt from=$(LANG1HTML) to=$(LANG2HTML) pair=$(PREFIX1) to=$(PREFIX2) > $@
 
 statistics.markdown: stats-$(BASENAME).$(PREFIX1).dix.markdown \
 				 stats-$(BASENAME).$(PREFIX1).t1x.markdown \
@@ -97,25 +97,22 @@ statistics.markdown: stats-$(BASENAME).$(PREFIX1).dix.markdown \
 				 stats-$(BASENAME).$(PREFIX2).t2x.markdown \
 				 stats-$(BASENAME).$(PREFIX1).t3x.markdown \
 				 stats-$(BASENAME).$(PREFIX2).t3x.markdown
-	$(AWK) '/DOCTYPE/,/<\/h1>/ {print;}' < \
-		stats-$(BASENAME).$(PREFIX1).dix.markdown > $@
-	$(AWK) '/<h2>/,/<\/div>/ {print;}' < \
-		stats-$(BASENAME).$(PREFIX1).dix.markdown | fgrep -v '</div>' >> $@
-	$(AWK) '/<h2>/,/<\/div>/ {print;}' < \
-		stats-$(BASENAME).$(PREFIX1).t1x.markdown | fgrep -v '</div>' >> $@
-	$(AWK) '/<h2>/,/<\/div>/ {print;}' < \
-		stats-$(BASENAME).$(PREFIX1).t2x.markdown | fgrep -v '</div>' >> $@
-	$(AWK) '/<h2>/,/<\/div>/ {print;}' < \
-		stats-$(BASENAME).$(PREFIX1).t3x.markdown | fgrep -v '</div>' >> $@
-	$(AWK) '/<h2>/,/<\/div>/ {print;}' < \
-		stats-$(BASENAME).$(PREFIX2).t1x.markdown | fgrep -v '</div>' >> $@
-	$(AWK) '/<h2>/,/<\/div>/ {print;}' < \
-		stats-$(BASENAME).$(PREFIX2).t2x.markdown | fgrep -v '</div>' >> $@
-	$(AWK) '/<h2>/,/<\/div>/ {print;}' < \
-		stats-$(BASENAME).$(PREFIX2).t3x.markdown | fgrep -v '</div>' >> $@
-	echo '</div><div class="row">' >> $@
-	$(AWK) '/<div id="footer"/,/<\/markdown/ {print;}' < \
-		stats-$(BASENAME).$(PREFIX1).dix.markdown | fgrep -v '</div>' >> $@
+	$(AWK) '/^# /,/^- - -/ {print;}' < \
+		stats-$(BASENAME).$(PREFIX1).dix.markdown | fgrep -v -- '- - -' > $@
+	$(AWK) '/^## /,/^- - -/ {print;}' < \
+		stats-$(BASENAME).$(PREFIX1).t1x.markdown | fgrep -v -- '- - -' >> $@
+	$(AWK) '/^## /,/^- - -/ {print;}' < \
+		stats-$(BASENAME).$(PREFIX1).t2x.markdown | fgrep -v -- '- - -' >> $@
+	$(AWK) '/^## /,/^- - -/ {print;}' < \
+		stats-$(BASENAME).$(PREFIX1).t3x.markdown | fgrep -v -- '- - -' >> $@
+	$(AWK) '/^## /,/^- - -/ {print;}' < \
+		stats-$(BASENAME).$(PREFIX2).t1x.markdown | fgrep -v -- '- - -' >> $@
+	$(AWK) '/^## /,/^- - -/ {print;}' < \
+		stats-$(BASENAME).$(PREFIX2).t2x.markdown | fgrep -v -- '- - -' >> $@
+	$(AWK) '/^## /,/^- - -/ {print;}' < \
+		stats-$(BASENAME).$(PREFIX2).t3x.markdown | fgrep -v -- '- - -' >> $@
+	$(AWK) '/- - -/,0 {print;}' < \
+		stats-$(BASENAME).$(PREFIX1).dix.markdown >> $@
 
 endif
 
